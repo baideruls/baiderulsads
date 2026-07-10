@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<title>baiderulsads</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+a{cursor:pointer;text-decoration:none;font-weight:bold;color:#7070d0;}
+article{max-width:360px;border-radius:24px 0px 0px 0px;border:1px dashed #888888;padding:2px 20px 20px 12px;background-color:#071024;}
+article small{font-size:14px;font-weight:bold;float:right;border-bottom:6px double #888888;padding:2px 12px 6px 12px;margin:-40px -12px 0px 0px;background-color:#071024;}
+body{margin:0px;font-family:"Segoe Ui";color:#F0F2F5;}
+h2{font-size:30px;font-family:"Indie Flower";font-weight:400;padding:12px 10px 10px 14px;border-radius:8px 0px 0px 0px;border-bottom:6px double #888888;margin:8px -12px 20px -4px;}
+img{width:280px;max-width:100%;margin-top:0px;border-radius:12px 0px 0px 0px;cursor:pointer;}
+main{display:flex;flex-wrap:wrap;}
+@keyframes gira{
+	0%{transform:rotateY(0deg);}
+	2%{transform:rotateY(90deg);}
+	4%{transform:rotateY(0deg);}
+}
+#ad{animation:gira 4s 0s infinite;}
+</style>
+</head>
+
+<body>
+<main id=main></main>
+<div style='position:fixed;bottom:0px;padding:4px;border:1px solid #000000;background-color:#ffffff;color:#000000;cursor:pointer;' onclick="window.open('anuncie.html','_blank');">&nbsp;ANUNCIE AQUI&nbsp;</div>
+</body>
+
+<script>
+htm=[];
+htm[0]=`<article onclick="window.open('softwares/bacamarte.zip','_blank');"><h2> * Bacamarte</h2><small>jogo para android</small><br><img src="screenshots/bacamarte.png" id=ad></article>`;
+htm[1]=`<article onclick="window.open('https://baideruls.github.io/Procedimentos/res/5/fasterBill.html','_blank');"><h2> * Faster Bill</h2><small>jogo de computador</small><br><img src="screenshots/fasterbill.png" id=ad></article>`;
+htm[2]=`<article onclick="window.open('https://baideruls.itch.io/fluid-fuel','_blank');"><h2> * Fluid Fuel</h2><small>jogo para android</small><br><img src="screenshots/fluidfuel.png" id=ad></article>`;
+htm[3]=`<article onclick="window.open('https://baideruls.github.io/Poly/','_blank');"><h2> * poly</h2><small>software para windows</small><br><img src="screenshots/poly.png" id=ad></article>`;
+htm[4]=`<article onclick="window.open('softwares/rocketattack.zip','_blank');"><h2> * Rocket Attack</h2><small>jogo para windows</small><br><img src="screenshots/rocketattack.png" id=ad></article>`;
+htm[5]=`<article onclick="window.open('softwares/shufflefaces.zip','_blank');"><h2> * Shuffle Faces</h2><small>jogo para windows</small><br><img src="screenshots/shufflefaces.png" id=ad></article>`;
+htm[6]=`<article onclick="window.open('https://baideruls.itch.io/square-motor','_blank');"><h2> * Square Motor</h2><small>jogo para android</small><br><img src="screenshots/squaremotor.png" id=ad></article>`;
+htm[7]=`<article onclick="window.open('https://baideruls.github.io/Procedimentos/res/6/stylish-gen/','_blank');"><h2> * Stylish Gen</h2><small>website</small><br><img src="screenshots/stylishgen.png" id=ad></article>`;
+htm[8]=`<article onclick="window.open('https://baideruls.github.io/Procedimentos/','_blank');"><h2> * Procedimentos</h2><small>website</small><br><img src="screenshots/procedimentos.png" id=ad></article>`;
+htm[9]=`<article onclick="window.open('https://baideruls.itch.io/zombie-waves','_blank');"><h2> * Zombie Waves</h2><small>jogo para android</small><br><img src="screenshots/zombiewaves.png" id=ad></article>`;
+htm[10]=`<article onclick="window.open('https://rodrigoschiomuniz.github.io/simple-pwa-chess/','_blank');"><h2> * Xadrez</h2><small>jogo multiplataforma</small><br><img src="screenshots/xadrez.png" id=ad></article>`;
+htm[11]=`<article onclick="window.open('https://baideruls.github.io/Perceptron/','_blank');"><h2> * Tutorial IA</h2><small>website</small><br><img src="screenshots/ia.png" id=ad></article>`;
+htm[12]=`<article onclick="window.open('https://baideruls.github.io/Procedimentos/res/18/quiz-china/index.html','_blank');"><h2> * Quiz China</h2><small>pwa</small><br><img src="screenshots/china.png" id=ad></article>`;
+htm[13]=`<article onclick="window.open('https://baideruls.github.io/Procedimentos/res/19/Everywhere.zip','_blank');"><h2> * Everywhere</h2><small>windows game</small><br><img src="screenshots/everywhere.png" id="download13"></article>`;
+document.getElementById('main').innerHTML=htm[parseInt(Math.random()*htm.length)];
+setInterval("document.getElementById('main').innerHTML=htm[parseInt(Math.random()*htm.length)];",30000);
+</script>
+</html>
